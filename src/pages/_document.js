@@ -34,7 +34,7 @@ export default class MyDocument extends Document {
 				<Head>
 					<meta
 						property='og:title'
-						content='Nick Black | Front-End Developer'
+						content='Nick Black - Front-End Developer'
 						key='title'
 					/>
 					<meta

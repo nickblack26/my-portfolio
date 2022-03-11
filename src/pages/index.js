@@ -14,7 +14,7 @@ const Home = () => {
 				<title>Nick Black | Front-End Developer</title>
 				<meta
 					property='og:title'
-					content='Nick Black | Front-End Developer'
+					content='Nick Black - Front-End Developer'
 					key='title'
 				/>
 				<meta
