@@ -19,7 +19,7 @@ import Button from '../../styles/GlobalComponents/Button';
 
 const Acomplishments = () => (
 	<Section>
-		<SectionTitle>Projects</SectionTitle>
+		<SectionTitle style={{ marginBottom: '32px' }}>Projects</SectionTitle>
 		<GridContainer style={{ padding: '0' }}>
 			{projects
 				.slice(0, 4)
