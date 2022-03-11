@@ -13,6 +13,15 @@ const Home = () => {
 			<Head>
 				<title>Nick Black - Front-End Developer</title>
 				<meta
+					property='title'
+					content='Nick Black - Front-End Developer'
+					key='title'
+				/>
+				<meta
+					name='description'
+					content='Hey, my name is Nick Black, I am a 24 years old web developer. I am a dedicated web developer with 2+ years of experience collaborating with executive leaders to build responsive websites. I am also a hardworking creator with a passion for crafting exceptional, one-of-a-kind user experiences.'
+				/>
+				<meta
 					property='og:title'
 					content='Nick Black - Front-End Developer'
 					key='title'
