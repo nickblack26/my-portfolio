@@ -50,7 +50,7 @@ const Acomplishments = () => (
 								) : null}
 
 								<ExternalLinks href={source}>
-									Source
+									Website
 								</ExternalLinks>
 							</UtilityList>
 						</BlogCard>
