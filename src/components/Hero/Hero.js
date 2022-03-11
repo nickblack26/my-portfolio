@@ -2,7 +2,6 @@ import React, { Component, useEffect, useRef } from 'react';
 import { init } from 'ityped';
 import {
 	Section,
-	SectionText,
 	SectionTitle,
 	SectionText2,
 } from '../../styles/GlobalComponents';
@@ -37,13 +36,8 @@ function Hero() {
 					websites.
 					<br />
 				</SectionText2>
-				<Button
-					onClick={() =>
-						(window.location =
-							'https://www.dropbox.com/s/kl9sgfl6rdbclt7/NickBlacksResume.pdf?dl=1')
-					}
-				>
-					<td>My CV</td>
+				<Button link='https://www.dropbox.com/s/kl9sgfl6rdbclt7/NickBlacksResume.pdf?dl=1'>
+					<td>My Resume</td>
 				</Button>
 			</LeftSection>
 		</Section>

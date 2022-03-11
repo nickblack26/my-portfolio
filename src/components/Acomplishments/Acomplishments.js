@@ -1,37 +1,75 @@
-import React from "react";
-
+import React from 'react';
+import { Section, SectionTitle } from '../../styles/GlobalComponents';
+import { projects } from '../../constants/constants';
 import {
-  Section,
-  SectionDivider,
-  SectionTitle,
-} from "../../styles/GlobalComponents";
-import { Box, Boxes, BoxNum, BoxText } from "./AcomplishmentsStyles";
-
-const data = [
-  {
-    number: 2014,
-    text: "Baccalauréat Maintenance des Equipements Industriels",
-  },
-  { number: 2021, text: "Built 10 web and mobile applications in 10 weeks" },
-  {
-    number: 2022,
-    text: "Titre professionnel Chef de projet de développement d'applications web et mobile (RNCP 6 - Niveau Bac +3/4)",
-  },
-  { number: 2022, text: "Built my first responsive website (this one)" },
-];
+	BlogCard,
+	CardInfo,
+	ExternalLinks,
+	GridContainer,
+	HeaderThree,
+	Hr,
+	Img,
+	ImgWrap,
+	Tag,
+	TagList,
+	TitleContent,
+	UtilityList,
+} from '../Projects/ProjectsStyles';
+import Button from '../../styles/GlobalComponents/Button';
 
 const Acomplishments = () => (
-  <Section>
-    <SectionTitle>Personal Acomplishments</SectionTitle>
-    <Boxes>
-      {data.map((card, index) => (
-        <Box key={index}>
-          <BoxNum>{card.number}</BoxNum>
-          <BoxText>{card.text}</BoxText>
-        </Box>
-      ))}
-    </Boxes>
-  </Section>
+	<Section>
+		<SectionTitle>Projects</SectionTitle>
+		<GridContainer style={{ padding: '0' }}>
+			{projects
+				.slice(0, 4)
+				.map(
+					({ image, title, description, tags, source, visit }, i) => (
+						<BlogCard key={i}>
+							<ImgWrap>
+								<Img src={image} />
+							</ImgWrap>
+							<TitleContent>
+								<HeaderThree title>{title}</HeaderThree>
+								<Hr />
+							</TitleContent>
+							<CardInfo>{description}</CardInfo>
+							<div>
+								<TitleContent>Stack</TitleContent>
+								<TagList>
+									{tags.map((tag, i) => (
+										<Tag key={i}>{tag}</Tag>
+									))}
+								</TagList>
+							</div>
+							<UtilityList>
+								{visit ? (
+									<ExternalLinks href={visit}>
+										Code
+									</ExternalLinks>
+								) : null}
+
+								<ExternalLinks href={source}>
+									Source
+								</ExternalLinks>
+							</UtilityList>
+						</BlogCard>
+					)
+				)}
+		</GridContainer>
+		<div
+			style={{
+				display: 'flex',
+				width: '100%',
+				justifyContent: 'center',
+				marginTop: '3.6rem',
+			}}
+		>
+			<Button link='/projects'>
+				<td>More Projects</td>
+			</Button>
+		</div>
+	</Section>
 );
 
 export default Acomplishments;

@@ -55,7 +55,7 @@ const Projects = () => (
 								) : null}
 
 								<ExternalLinks href={source}>
-									Source
+									Website
 								</ExternalLinks>
 							</UtilityList>
 						</BlogCard>
