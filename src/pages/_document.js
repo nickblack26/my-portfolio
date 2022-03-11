@@ -30,7 +30,7 @@ export default class MyDocument extends Document {
 	render() {
 		return (
 			<Html>
-				<title>Nick Black | Front-End Developer</title>
+				<title>Nick Black - Front-End Developer</title>
 				<Head>
 					<meta
 						property='og:title'
