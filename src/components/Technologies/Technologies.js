@@ -27,10 +27,8 @@ const Technologies = () => (
 		<SectionDivider style={{ marginBottom: '3%' }} />
 		<SectionTitle>Technologies</SectionTitle>
 		<SectionText>
-			My main stack is React.JS, I love it. But I am also proficient in
-			and work with HTML/CSS. As for the back-end I use Node.JS and
-			Express. Additionally, I am competent in API and NoSQL database
-			(MongoDB).
+			My main stack is Next.JS, But I am also very proficient in and work
+			with HTML/CSS.
 		</SectionText>
 		<List>
 			<ListItem>
